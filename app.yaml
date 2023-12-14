@@ -1,0 +1,9 @@
+runtime: python311
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 4
+  min_idle_instances: automatic
+  max_idle_instances: automatic
+
+entrypoint: gunicorn -b :$PORT run:app
