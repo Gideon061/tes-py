@@ -6,4 +6,4 @@ automatic_scaling:
   min_idle_instances: automatic
   max_idle_instances: automatic
 
-entrypoint: gunicorn -b :$PORT run:app
+entrypoint: python -m app.run
